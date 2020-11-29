@@ -3,7 +3,7 @@ import React, { forwardRef, useImperativeHandle } from 'react'
 import { useState, createContext } from 'react'
 import ReactDOM from 'react-dom'
 
-export const DisplayContext = createContext()
+export const DisplayContext = createContext(null)
 
 const ModalRegister = forwardRef<HTMLButtonElement, ButtonProps>(
   (props, ref) => {

@@ -3,12 +3,11 @@ import React, { forwardRef, useImperativeHandle } from 'react'
 import { useState, createContext } from 'react'
 import ReactDOM from 'react-dom'
 
-export const DisplayContext = createContext(false)
+export const DisplayContext = createContext()
 
 const ModalRegister = forwardRef<HTMLButtonElement, ButtonProps>(
   (props, ref) => {
     const [display, setDisplay] = useState(false)
-
 
     useImperativeHandle(ref, (): any => {
       return {

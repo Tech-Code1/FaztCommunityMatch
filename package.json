@@ -34,7 +34,7 @@
     "react-hooks-helper": "^1.6.0",
     "react-icons": "^4.1.0",
     "react-router-dom": "^5.2.0",
-    "react-spring": "^9.0.0-rc.3",
+    "react-spring": "9.0.0-rc.3",
     "react-stripe-checkout": "^2.6.3",
     "react-swipeable": "^5.5.1",
     "styled-components": "^5.1.1",

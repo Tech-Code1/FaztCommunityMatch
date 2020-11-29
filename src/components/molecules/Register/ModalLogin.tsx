@@ -93,46 +93,46 @@ const ModalLogin = ({ showModal, setShowModal }) => {
             ref={modalRef}
             onClick={closeModal}
           >
-            <animated.div style={animation}>
-              <div className="backgron-modal-login">
-                <LoginImage />
-                <h1 className="title-modal-login">Iniciar Sesión</h1>
-                <CloseModalButton
-                  aria-label='Close modal'
-                  onClick={() => setShowModal(prev => !prev)} />
-                <div className="inputs-modal-login">
-                  <label htmlFor="" className="label-modal-login"> Correo:
+            {/* <animated.div style={animation}> */}
+            <div className="backgron-modal-login">
+              <LoginImage />
+              <h1 className="title-modal-login">Iniciar Sesión</h1>
+              <CloseModalButton
+                aria-label='Close modal'
+                onClick={() => setShowModal(prev => !prev)} />
+              <div className="inputs-modal-login">
+                <label htmlFor="" className="label-modal-login"> Correo:
               <EmailInput
-                      className="margin-input-email"
-                      required
-                      placeHolder="*Ingresa tu Correo"
-                      handleOnChange={handleOnChange}
-                      error={formErrors.email}
-                      name="email"
-                      value={formState.email}
-                    />
-                  </label>
-                  <label htmlFor="" className="label-modal-login"> Contraseña:
+                    className="margin-input-email"
+                    required
+                    placeHolder="*Ingresa tu Correo"
+                    handleOnChange={handleOnChange}
+                    error={formErrors.email}
+                    name="email"
+                    value={formState.email}
+                  />
+                </label>
+                <label htmlFor="" className="label-modal-login"> Contraseña:
               <InputPass
-                      required
-                      placeHolder="*Ingresa tu contraseña"
-                      handleOnChange={handleOnChange}
-                      error={formErrors.password}
-                      name="password"
-                      value={formState.password}
-                    />
-                  </label>
-                </div>
-
-                <div className="content-btn-next-mondal-login">
-                  <a className="btn-medium-next-modal-login" href="">
-                    Conectarme
-      </a>
-                </div>
-
-
+                    required
+                    placeHolder="*Ingresa tu contraseña"
+                    handleOnChange={handleOnChange}
+                    error={formErrors.password}
+                    name="password"
+                    value={formState.password}
+                  />
+                </label>
               </div>
-            </animated.div>
+
+              <div className="content-btn-next-mondal-login">
+                <a className="btn-medium-next-modal-login" href="">
+                  Conectarme
+      </a>
+              </div>
+
+
+            </div>
+            {/* </animated.div> */}
           </section>
         )
 

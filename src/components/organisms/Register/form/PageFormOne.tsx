@@ -1,9 +1,7 @@
 import React, { ChangeEvent, useState } from 'react'
-import { FormState } from 'react-hook-form'
 import BtnNext from '../../../atoms/Register/BtnNext'
 import DescriptionLogin from '../../../molecules/Register/description-login'
 import EmailInput from '../../../molecules/Register/inputs/EmailInput'
-import LastnameInput from '../../../molecules/Register/inputs/LastnameInput'
 import NameInput from '../../../molecules/Register/inputs/NameInput'
 
 interface FormStateValues {
@@ -68,6 +66,7 @@ function PageFormOne() {
 
       {/*  <LastnameInput aria-label="write your last name" /> */}
       <EmailInput
+        className='gg'
         required
         placeHolder="*Ingresa tu Correo"
         handleOnChange={handleOnChange}
